@@ -11,8 +11,9 @@ module Samurai
       FLASH_CLASSES[level]
     end
 
-    def active(path)
-      current_page?(path) ? 'active' : ''
+    def active(*paths)
+      menu_active = paths.any? {|path| current_page?(path)}
+      menu_active ? 'active' : ''
     end
   end
 end

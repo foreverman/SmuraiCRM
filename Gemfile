@@ -42,5 +42,8 @@ group :development do
   gem 'web-console', '~> 2.0'
 end
 
+gem 'modular_engine'
+gem 'deface'
 gem "samurai_core", path: "engines/core"
+gem "samurai_contacts", path: "engines/contacts"
 
